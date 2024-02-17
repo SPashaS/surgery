@@ -1,0 +1,127 @@
+
+//====================================================================================================
+.footer {
+  color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  position: relative;
+
+
+  background-image: url("@img/bg2.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+
+  @media (min-width:$pc){
+    padding-top: 115px;
+    padding-bottom: 60px;
+  }
+
+  // .footer__container
+  &__container {
+    position: relative;
+    z-index: 1;
+
+
+    display: grid;
+    gap: 30px;
+
+    @media (min-width:$mobile){
+      grid-template-columns: 0.8fr 1fr;
+      row-gap: 45px;
+    }
+  }
+
+  // .footer__logo
+
+  &__logo {
+    display: none;
+
+    @media (min-width:$mobile){
+      display: block;
+      align-self: center;
+    }
+  }
+
+  // .footer__contacts
+
+  &__contacts {}
+
+  // .footer__title
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: SpectralSC;
+  }
+
+  // .footer__contacts-list
+
+  &__contacts-list {
+    & > *:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  // .footer__contacts-row
+
+  &__contacts-row {
+    & > *:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  // .footer__contacts-item
+
+  &__contacts-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  // .footer__contacts-mail
+
+  &__contacts-mail {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // .footer__row
+
+  &__row {
+    @media (min-width:$mobile){
+      grid-area: 2/1/3/3;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  // .footer__copy
+  &__copy {}
+
+  // .footer__politic
+
+  &__politic {
+    display: none;
+
+    @media (min-width:$mobile){
+      display: block; 
+    }
+  }
+
+  // .footer__conditions
+  &__conditions {
+    display: none;
+
+    @media (min-width:$tablet){
+      display: block; 
+    }
+  }
+}
+
+
+//====================================================================================================
+

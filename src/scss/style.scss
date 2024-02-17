@@ -1,0 +1,322 @@
+@use "sass:math";
+
+// Подключение миксинов ===========================================================================================================================================================================================================================================================================
+@import "base/mixins";
+
+// Подключение шрифтов ===========================================================================================================================================================================================================================================================================
+//&display=swap - добавить при подключении через плагин
+// Подключить если есть локальные файлы шрифтов
+@import "fonts/fonts";
+
+// Подключение иконочных шрифтов ==============================================================================================================================================================================================================================================================================
+// Подключить если есть файл иконочного шрифта
+@import "fonts/icons";
+
+// Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
+$fontFamily: Montserrat;
+$fontSize: 1.6rem; // где 14(px) - размер шрифта по умолчанию из макета
+
+// Основные цвета
+:root {
+	--main-color-text: #2c2c2c; // Цвет шрифта по умолчанию
+	--light-color-text: #ffffff; // Цвет шрифта по умолчанию
+	--gray-color-text: #8D7F7F;
+	--dark-color-text: #000000;
+
+	--color-light: #ffffff;
+	--accent-color: #FD9900;
+
+	--bg-color: #BFB2A8;
+}
+
+// НАСТРОЙКИ ===============================================================================================================================================================================================================================================================================================
+// Минимальная ширина страницы
+$minWidth: 320;
+// Ширина полотна (макета)
+$maxWidth: 1600;
+// Ширина ограничивающего контейнера (0 = нет ограничения)
+$maxWidthContainer: 1170;
+// Общий отступ у контейнера
+// (30 = по 15px слева и справа, 0 = нет отступа)
+$containerPadding: 30;
+
+// Тип адаптива:
+// 1 = отзывчивость (у контейнера нет брейкпоинтов),
+// 2 = по брейк-поинтам (контейнер меняет свою ширину по брейк-поинтам)
+$responsiveType: 1;
+
+// Ширина страбатывания первого брейкпоинта
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// Брейк-поинты
+//$pc: $containerWidth+px; // ПК, ноутбуки, некоторые планшеты в горизонтальном положении
+$pcXL: 1699.98+px;
+$pcL: 1439.98+px;
+$pc: 1279.98+px;
+$tablet: 991.98+px; // Планшеты, некоторые телефоны в горизонтальном положении
+$mobile: 767.98+px; // Телефоны L
+$mobileSmall: 479.98+px; // Телефоны S
+
+// Обнуление и общие параметры ============================================================================================================================================================================================== =============================================================================================== ===============================================================================================
+@import "base/null";
+
+body {
+	// Скролл заблокирован
+	.lock & {
+		overflow: hidden;
+		touch-action: none;
+	}
+	// Сайт загружен
+	.loaded & {
+		opacity: 1;
+	}
+
+}
+
+// ::selection {
+// 	background-color: #BFB2A8;
+// 	color: var(--light-color-text);	
+// }
+
+// Оболочка ============================================================================================================================================================================================================================================================================================================================================================================================================================================
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	
+	position: relative;
+	background-color: var(--bg-color);
+
+	&::after {
+		content:'';
+		position: absolute;
+		z-index: 0;
+		opacity: 0.3;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url("@img/bg.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+
+	}
+
+	// Прижимаем footer
+	> main {
+		flex: 1 1 auto;
+	}
+	// Фикс для слайдеров
+	> * {
+		min-width: 0;
+		position: relative;
+		z-index: 1;
+	}
+
+}
+
+.preload {
+	background-color: var(--bg-color);
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	animation-name: preload;
+	animation-duration: 6s;
+	animation-fill-mode: forwards;
+	pointer-events: none;
+
+
+	// .preload__inner
+	&__inner {
+		display: grid;
+		justify-items: center;
+
+	}
+
+	// .preload__image
+	&__image {
+		background-image: url("@img/logo-preload.svg");
+		background-size: cover;
+		background-position: center;
+		// width: 299px;
+		@include adaptiveValue("width",299,180);
+		aspect-ratio: 299/269;
+		
+
+
+		// animation: 1s ease-in 0s infinite alternate preload-img;
+		animation-name: preload-img;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+		opacity: 0;
+	}
+
+	&__title {
+		@include adaptiveValue("font-size",60, 40);
+		font-weight: 300;
+		text-transform: uppercase;
+		color: #7A6D6D;
+		opacity: 0;
+		animation-duration: 5s;
+		animation-fill-mode: forwards;
+	}
+	
+
+	// .preload__title_1
+	&__title_1 {
+		animation-name: preload-t1;
+	}
+
+	// .preload__title_2
+	&__title_2 {
+		animation-name: preload-t2;
+	}
+
+	// .preload__title_3
+	&__title_3 {
+		animation-name: preload-t3;
+	}
+}
+
+@keyframes preload-img {
+	0% {
+		opacity: 0;
+		transform: translateY(20%);
+	}
+	20% {
+		transform: translateY(20%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+@keyframes preload-t1 {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		transform: translateY(80%);
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+@keyframes preload-t2 {
+	0% {
+		opacity: 0;
+	}
+	40% {
+		transform: translateY(80%);
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+@keyframes preload-t3 {
+	0% {
+		opacity: 0;
+	}
+	60% {
+		transform: translateY(80%);
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+@keyframes preload {
+	0% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+// Ограничивающий контейнер ======================================================================================================================================================================================================================
+
+/*
+(i) Стили будут применяться ко 
+всем классам содержащим *__container
+Например header__container, main__container и т.д.
+Снипет (HTML): cnt
+*/
+@if ($responsiveType==1) {
+	// Отзывчивая
+	[class*="__container"] {
+		@if ($maxWidthContainer>0) {
+			max-width: $maxWidthContainer+px;
+			box-sizing: content-box;
+			margin: 0 auto;
+		}
+		@if ($containerPadding>0) {
+			padding: 0 math.div($containerPadding, 2)+px;
+		}
+
+		@media (min-width: $mobile) {
+			@if ($containerPadding>0 and $maxWidthContainer>0) {
+				padding: 0 15px;
+			}
+		}
+
+
+	}
+} @else {
+	// По брейк-поинтам
+	[class*="__container"] {
+		margin: 0 auto;
+		@if ($maxWidthContainer>0) {
+			max-width: rem($maxWidthContainer);
+			box-sizing: content-box;
+		} @else {
+			@if ($containerPadding>0) {
+				padding: 0 rem(math.div($containerPadding, 2));
+			}
+		}
+		@media (max-width: $pc) {
+			max-width: rem(970);
+		}
+		@media (max-width: $tablet) {
+			max-width: rem(750);
+		}
+		@media (max-width: $mobile) {
+			max-width: none;
+			@if ($containerPadding>0 and $maxWidthContainer>0) {
+				padding: 0 rem(math.div($containerPadding, 2));
+			}
+		}
+	}
+}
+
+// Подключение базовых стилей, шаблонов (заготовок) и вспомагательных классов
+// Для подключения/отключения конкретных стилей смотри base.scss
+@import "base";
+@import "./base/swiper.scss";
+
+// Подключение стилей общих элементов проекта
+@import "common";
+
+// Подключение стилей отдельных блоков
+@import "header";
+@import "footer";
+
+// Подключение стилей отдельных страниц
+@import "home";
