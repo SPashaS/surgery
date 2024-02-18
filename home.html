@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20240217114722">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240218190753">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,19 +32,19 @@
 					</div>
 
 					<div class="header__menu menu">
-						<button type="button" class="menu__burger burger"><span class="burger__lines"><span></span></span></button>
+						<button type="button" class="menu__burger burger" aria-label="Меню"><span class="burger__lines"><span></span></span></button>
 						<nav class="menu__body">
 							<ul class="menu__list">
 								<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Досижения</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Виды операций</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Галерея</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+								<li class="menu__item"><a href="#about" class="menu__link">Досижения</a></li>
+								<li class="menu__item"><a href="#kinds" class="menu__link">Виды операций</a></li>
+								<li class="menu__item"><a href="#gallery" class="menu__link">Галерея</a></li>
+								<li class="menu__item"><a href="#reviews" class="menu__link">Отзывы</a></li>
 							</ul>
 						</nav>
 					</div>
 
-					<a href="#" class="header__tel _icon-phone">Контакты</a>
+					<a href="#footer" class="header__tel _icon-phone">Контакты</a>
 
 				</div>
 			</div>
@@ -53,333 +53,364 @@
 
 			<section class="page__promo promo">
 				<div class="promo__container">
+					<div class="promo__wrapper">
 
-					<div class="promo__body">
-						<h1 class="promo__title">Юлия Игоревна Оконская</h1>
-						<ul class="promo__list">
-							<li class="promo__list-item">Кандидат медицинских наук</li>
-							<li class="promo__list-item">Пластический хирург</li>
-							<li class="promo__list-item">Челюстно - лицевой хирург</li>
-							<li class="promo__list-item">Оториноларинголог</li>
-						</ul>
-						<ul class="promo__socials socials">
-							<li><a href="#" class="socials__link _icon-yout"></a></li>
-							<li><a href="#" class="socials__link _icon-vk"></a></li>
-							<li><a href="#" class="socials__link _icon-inst"></a></li>
-							<li><a href="#" class="socials__link _icon-wapp"></a></li>
-							<li><a href="#" class="socials__link _icon-mail"></a></li>
-							<li><a href="#" class="socials__link _icon-tel"></a></li>
-						</ul>
+						<div class="promo__body">
+							<h1 class="promo__title">Юлия Игоревна Оконская</h1>
+							<ul class="promo__list">
+								<li class="promo__list-item">Кандидат медицинских наук</li>
+								<li class="promo__list-item">Пластический хирург</li>
+								<li class="promo__list-item">Челюстно - лицевой хирург</li>
+								<li class="promo__list-item">Оториноларинголог</li>
+							</ul>
+							<ul class="promo__socials socials">
+								<li><a href="#" class="socials__link _icon-yout" aria-label="name"></a></li>
+								<li><a href="#" class="socials__link _icon-vk" aria-label="name"></a></li>
+								<li><a href="#" class="socials__link _icon-inst" aria-label="name"></a></li>
+								<li><a href="#" class="socials__link _icon-wapp" aria-label="name"></a></li>
+								<li><a href="#" class="socials__link _icon-mail" aria-label="name"></a></li>
+								<li><a href="#" class="socials__link _icon-tel" aria-label="name"></a></li>
+							</ul>
+						</div>
+
+						<div class="promo__images">
+							<picture><source data-srcset="img/promo/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="promo__image promo__image_1" data-src="img/promo/1.png" alt="1"></picture>
+							<picture><source data-srcset="img/promo/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="promo__image promo__image_2" data-src="img/promo/2.png" alt="2"></picture>
+							<picture><source data-srcset="img/promo/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="promo__image promo__image_3" data-src="img/promo/3.png" alt="3"></picture>
+						</div>
+
+						<div class="promo__decor">
+							<span class="decor decor_1"></span>
+							<span class="decor decor_2"></span>
+							<span class="decor decor_3"></span>
+						</div>
+
 					</div>
-
-					<div class="promo__images">
-						<picture><source srcset="img/promo/1.webp" type="image/webp"><img class="promo__image promo__image_1" src="img/promo/1.png" alt="1"></picture>
-						<picture><source srcset="img/promo/2.webp" type="image/webp"><img class="promo__image promo__image_2" src="img/promo/2.png" alt="2"></picture>
-						<picture><source srcset="img/promo/3.webp" type="image/webp"><img class="promo__image promo__image_3" src="img/promo/3.png" alt="3"></picture>
-					</div>
-
 				</div>
 			</section>
 
-			<div class="page__about about">
+			<div class="page__about about" id="about">
 				<div class="about__container">
+					<div class="about__wrapper">
+						<div data-tabs class="about-tabs">
+							<nav data-tabs-titles class="about-tabs__navigation">
+								<button type="button" class="about-tabs__title  _icon-arr _tab-active">Любимые цитаты</button>
+								<button type="button" class="about-tabs__title _icon-arr">Обо мне</button>
+								<button type="button" class="about-tabs__title _icon-arr">Опыт работы</button>
+								<button type="button" class="about-tabs__title _icon-arr">Образование</button>
+							</nav>
+							<div class="about-tabs__content">
+								<div class="about-tabs__content-wrap" data-tabs-body>
+									<div class="about-tabs__body">
+										<p>Никакая внешняя прелесть не может быть полной, если она не оживлена внутренней красотой. Красота
+											души
+											разливается подобно таинственному свету по телесной красоте. (Виктор Мари Гюго)</p>
+										<br>
+										<p>Не люблю делать операции, ради операций...</p>
+										<br>
+										<p>Красивых мужчин быть не должно, а некрасивых не бывает. Бывает только мало цветов и тёплое
+											шампанское.
+											(Коко Шанель)</p><br>
+										<p>Два года назад я узнал от тибетских монахов, что три самые страшные вещи, которые могут произойти с
+											человеком - это красота, слава и богатство. (Бред Питт)</p><br>
+										<p>Любая операция должна выполняться по показаниям!</p><br>
+										<p>Внешняя красота еще драгоценнее, когда прикрывает внутреннюю. Книга, золотые застежки которой
+											замыкают
+											золотое содержание, приобретает особенное уважение. (Шекспир Уильям)</p><br>
+										<p>В человеке должно быть все прекрасно: и лицо, и одежда, и душа,
+											и мысли.</p>
+										</p>(Антон Павлович Чехов)</p>
+									</div>
+									<div class="about-tabs__body">
+										<p>
+											В детстве я мечтала стать врачом. Это очень нужная и важная профессия. Что может быть ценнее
+											человеческой жизни и необходимее здоровья? Человек просто не имеет права быть плохим врачом, так как
+											именно врачу доверяют самое главное и ценное – здоровье.
+											Профессия доктора очень сложная, но при этом очень интересная. Многие представляют её только по
+											сериалам, но в жизни всё совершенно по-другому.<br>
+											Будущий доктор должен обладать такими качествами как: терпеливость, понимание, уважение, милосердие.
+											Пациенты попадаются разные, но быть вежливым нужно с каждым человеком. Работа врача очень тяжела –
+											ежедневно приходится принимать решения, от которых зависит чья-то судьба. Поэтому очень важно стать
+											настоящим профессионалом. Врач – это гордость и ответственность за жизни людей. Доктором и особенно
+											хирургом дано быть не каждому. Это действительно призвание. Эта профессия подходит тем, кто искренне
+											любит людей и хочет помогать им, кто умеет сопереживать, тем, кто любит трудиться. Если все эти
+											качества
+											соединены в одном человеке, то у него есть все шансы стать настоящим профессионалом с большой
+											буквы.<br>
+											Я не могу точно сказать, почему я выбрал профессию пластического хирурга. Просто мне она нравится и
+											все.
+											Это у меня в душе, это никуда не деть. Но над специализацией я думала долго. Я взвешивал все «за» и
+											«против», все плюсы и минусы. И увидел в этой профессии пластического хирурга благородство и
+											человечность.<br>
+											Конечно же, без других врачей нам не обойтись. Людям нужны не только хирурги, но я свой выбор
+											сделала:
+											я
+											пластический хирург.<br>
+											Сейчас я большой специалист. Про меня опубликовано более 30 работ в центральных научных печатных
+											изданиях и одна монография : "Клиника, диагностика и лечение слюнно-каменной болезни". Янаграждена
+											Почетной грамотой Законодательного собрания Приморского края за многолетний добросовестный труд,
+											высокий
+											профессионализм и большой вклад в совершенствование оказания медицинской помощи населению
+											Приморского
+											края.<br>
+											Мне нравится моя профессия и яработаю с удовольствием и всем желаю того же.
+										</p>
+									</div>
+									<div class="about-tabs__body">
+										<span>Профессиональный опыт:</span>
+										<ul>
+											<li>1998–2009 гг. — Краевая клиническая больница № 2, г.Владивосток.
+												Врач-челюстно-лицевой хирург.
+											</li>
+											<li>2004–2009 гг. — Краевая клиническая больница № 2, г. Владивосток.
+												Врач-оториноларинголог.
+											</li>
+											<li>2009–2016 гг. — Городская больница № 2, г.Владивосток.
+												Врач-челюстно-лицевой хирург отделения нейрохирургии.
+											</li>
+											<li> 2013–2018 гг. — Медицинский Центр ДВФУ, г.Владивосток.
+												Врач-челюстно-лицевой хирург, оториноларинголог,
+												пластический хирург.
+											</li>
+											<li>
+												2010-2019 гг. — Клиника «Инномед-плюс», г.Владивосток.
+												Пластический хирург, врач-челюстно-лицевой хирург, оториноларинголог.
+											</li>
+											<li> 2019-2020 гг. — МЦ "Здоровье"
+												Пластический хирург, врач-челюстно-лицевой хирург, оториноларинголог.
+											</li>
+											<li>
+												С 2020-2023гг. Медицинский центр "Аленка" (ул. Маковского, 7б)
+												Пластический хирург, врач-челюстно-лицевой хирург, оториноларинголог.
+											</li>
+											<li>С 2020-2023гг. Ассистент института стоматологии ТГМУ
 
-					<div data-tabs class="about-tabs">
-						<nav data-tabs-titles class="about-tabs__navigation">
-							<button type="button" class="about-tabs__title  _icon-arr _tab-active">Любимые цитаты</button>
-							<button type="button" class="about-tabs__title _icon-arr">Обо мне</button>
-							<button type="button" class="about-tabs__title _icon-arr">Опыт работы</button>
-							<button type="button" class="about-tabs__title _icon-arr">Образование</button>
-						</nav>
-						<div class="about-tabs__content">
-							<div class="about-tabs__content-wrap" data-tabs-body>
-								<div class="about-tabs__body">
-									<p>Никакая внешняя прелесть не может быть полной, если она не оживлена внутренней красотой. Красота
-										души
-										разливается подобно таинственному свету по телесной красоте. (Виктор Мари Гюго)</p>
-									<br>
-									<p>Не люблю делать операции, ради операций...</p>
-									<br>
-									<p>Красивых мужчин быть не должно, а некрасивых не бывает. Бывает только мало цветов и тёплое
-										шампанское.
-										(Коко Шанель)</p><br>
-									<p>Два года назад я узнал от тибетских монахов, что три самые страшные вещи, которые могут произойти с
-										человеком - это красота, слава и богатство. (Бред Питт)</p><br>
-									<p>Любая операция должна выполняться по показаниям!</p><br>
-									<p>Внешняя красота еще драгоценнее, когда прикрывает внутреннюю. Книга, золотые застежки которой
-										замыкают
-										золотое содержание, приобретает особенное уважение. (Шекспир Уильям)</p><br>
-									<p>В человеке должно быть все прекрасно: и лицо, и одежда, и душа,
-										и мысли.</p>
-									</p>(Антон Павлович Чехов)</p>
+											</li>
+											<li> С 2021г. Клиника Селин, Тимура Фрунзе, 11, стр. 15
+												Пластический хирург
+											</li>
+											<li> С 2022г. Клиника Биос, Иваньковское шоссе, 7
+												Пластический хирург
+											</li>
+											<li> С 2023г. Клиника GMT, Новинский бульвар, 20 а, стр. 9
+												Пластический хирург
+											</li>
+										</ul>
+									</div>
+									<div class="about-tabs__body">
+										<ul>
+											<li> 1991–1997 гг. — Владивостокский государственный медицинский университет. Лечебный факультет.
+												Специальность — лечебное дело. Квалификация — врач-хирург.
+											</li>
+											<li> 1997–1999 гг. — клиническая ординатура на кафедре общей хирургии с курсом челюстно-лицевой
+												хирургии
+												ВГМУ. Сертификат по челюстно-лицевой хирургии.
+											</li>
+											<li> 2000–2003 гг. — аспирантура на кафедре общей хирургии ВГМУ.
+
+											</li>
+											<li> 2002 г. — усовершенствование по теме: «Имплантация в стоматологии и челюстно-лицевой хирургии:
+												хирургические и ортопедические аспекты».
+												ВГМУ, кафедра стоматологии.
+											</li>
+											<li> 2003 г. — защита диссертации на соискание степени кандидат медицинских наук по теме:
+												«Современные
+												методы
+												диагностики и лечения слюнно-каменной болезни». Присуждена ученая степень кандидат медицинских
+												наук.
+											</li>
+											<li> Апрель-май 2003 г. — повышение квалификации на кафедре нейрохирургии
+												Военно-Медицинской академии Спб по нейрохирургии.
+											</li>
+											<li>
+												2004 г. — профессиональная переподготовка в ВГМУ по специальности «Оториноларингология».
+												Сертификат
+												оториноларинголога.
+											</li>
+											<li>
+												Март-апрель 2005 г. — усовершенствование в клинике челюстно-лицевой, косметической и пластической
+												хирургии и имплантологии в Мальтузианской больнице Св. Йоганнеса г. Дуйсбурга, Германия. В
+												процессе
+												усовершенствования особое внимание уделено вопросам хирургического лечения дизоклюзий,
+												травматологии,
+												имплантологии
+												и пластической реконструктивной хирургии.
+											</li>
+											<li>
+												Октябрь 2008 г. — обучение по курсу
+												«Диспорт в практике врача эстетической медицины». УМЦ КИТ, Владивосток.
+											</li>
+											<li> Ноябрь 2008 г. — обучение по курсу
+												«Контурное моделирование лица препаратами группы Рестилайнов». УМЦ КИТ, Владивосток.
+											</li>
+											<li> Июнь 2008 г. — делегат V международного курса по пластической хирургии,
+												г. Екатеринбург.
+											</li>
+											<li> Июнь 2010 г. — делегат шестого международного курса по пластической хирургии, методикам
+												омоложения
+												лица
+												и тела, г. Екатеринбург.
+											</li>
+											<li>
+												Апрель 2011 г. — делегат международного конгресса по остеологии, г. Канны.
+											</li>
+											<li> Июнь 2011 г. — делегат обучающего курса ISAPS, г. Санкт-Петербург.
+											</li>
+											<li> Сентябрь 2011 г. — делегат международного конгресса по антивозрастной медицине, г. Париж.
+											</li>
+											<li> Апрель 2012 г. — усовершенствование в клинике челюстно-лицевой, косметической
+												и пластической хирургии и имплантологии в Мальтузианской больнице
+												Святого Йоганнеса г. Дуйсбурга, Германия.
+												В процессе усовершенствования особое внимание уделено вопросам пластической реконструкктивной
+												хирургии лица, хирургического лечения дизокклюзий, расщелин верхней губы и неба, имплантологии.
+											</li>
+											<li> 4–8 сентября 2012 г. — делегат международного конгресса эстетической
+												и пластической хирургии (ISAPS), Женева.
+											</li>
+											<li> 11–15 сентября 2012 г. — делегат международного конгресса европейской ассоциации
+												черепно-челюстно-лицевой хирургии, Дубровник.
+											</li>
+											<li> Ноябрь 2012 г. — Страсбургская исследовательская группа остеосинтеза.
+												Обучающий курс по теме Свободный лоскут:
+												«Реконструктивная и онкологическая хирургия головы и шеи» — лекции
+												и практическая работа, г. Гронинген, Нидерланды (S. O. R. G. Free Flap Course:
+												«Head and Neck Reconstructive and Oncologic Surgery» — Lectures and hands-on Human Cadaver
+												Course).
+											</li>
+											<li>16-17 мая 2014 – Implantology International Dental Expert Symposium, Дюссельдорф, Германия
+
+											</li>
+											<li>
+												19 октября 2013 — 11-й продвинутый курс по короткорубцовому лифтингу средней
+												и нижней третей лиц, г. Гент, Бельгия (The 11 th Advanced MACS lift Course)
+											</li>
+											<li> 23–25 октября 2013 — 20-й международный обучающий курс по современным техникам в ринопластике,
+												г.
+												Амастердам, Нидерланды
+												(The 20 th International Course in Modern Rhinoplasty Techniques)
+											</li>
+											<li> 27 сентября – 4 октября 2014 г. — средиземноморский форум по эстетической
+												и антивозрастной медицине
+											</li>
+											<li> 1 июля - 1 декабря 2014 — профессиональная переподготовка по специальности «Пластическая
+												хирургия»
+											</li>
+											<li>
+												17-19 марта 2015 – 23-й продвинутый курс по функциональной
+												и эстетической ринопластике, Штуттгарт, Германия
+											</li>
+											<li> 20 марта 2015 – 1-й симпозиум по реконструкции носа, Штуттгарт, Германия
+											</li>
+											<li>
+												6-8 апреля 2016 — 24-й продвинутый курс по функциональной
+												и эстетической ринопластике, Штуттгарт, Германия
+											</li>
+											<li>
+												1-3 декабря 2016 — 36-й симпозиум по пластической хирургии, Debating the choices in rhinoplasty,
+												Нью-Йорк, США
+											</li>
+											<li>
+												26-28 апреля 2017 – 25–й продвинутый курс по функциональной и эстетической ринопластике,
+												Штуттгарт,
+												Германия.
+											</li>
+											<li> 29 апреля 2017 – 2-й симпозиум по реконструкции носа, Штуттгарт, Германия.
+
+											</li>
+											<li> 17-19 ноября 2017 – 13-й Ежегодный Симпозиум по эстетической хирургии, Чикаго, Иллинойс, США
+											</li>
+											<li> 31 октября - 4 ноября 2018 – 24-й конгресс Международного Общества Эстетической Пластической
+												Хирургии,
+												Майами-Бич, Флорида, США
+											</li>
+										</ul>
+									</div>
 								</div>
-								<div class="about-tabs__body">
-									<p>
-										В детстве я мечтала стать врачом. Это очень нужная и важная профессия. Что может быть ценнее
-										человеческой жизни и необходимее здоровья? Человек просто не имеет права быть плохим врачом, так как
-										именно врачу доверяют самое главное и ценное – здоровье.
-										Профессия доктора очень сложная, но при этом очень интересная. Многие представляют её только по
-										сериалам, но в жизни всё совершенно по-другому.<br>
-										Будущий доктор должен обладать такими качествами как: терпеливость, понимание, уважение, милосердие.
-										Пациенты попадаются разные, но быть вежливым нужно с каждым человеком. Работа врача очень тяжела –
-										ежедневно приходится принимать решения, от которых зависит чья-то судьба. Поэтому очень важно стать
-										настоящим профессионалом. Врач – это гордость и ответственность за жизни людей. Доктором и особенно
-										хирургом дано быть не каждому. Это действительно призвание. Эта профессия подходит тем, кто искренне
-										любит людей и хочет помогать им, кто умеет сопереживать, тем, кто любит трудиться. Если все эти
-										качества
-										соединены в одном человеке, то у него есть все шансы стать настоящим профессионалом с большой
-										буквы.<br>
-										Я не могу точно сказать, почему я выбрал профессию пластического хирурга. Просто мне она нравится и
-										все.
-										Это у меня в душе, это никуда не деть. Но над специализацией я думала долго. Я взвешивал все «за» и
-										«против», все плюсы и минусы. И увидел в этой профессии пластического хирурга благородство и
-										человечность.<br>
-										Конечно же, без других врачей нам не обойтись. Людям нужны не только хирурги, но я свой выбор
-										сделала:
-										я
-										пластический хирург.<br>
-										Сейчас я большой специалист. Про меня опубликовано более 30 работ в центральных научных печатных
-										изданиях и одна монография : "Клиника, диагностика и лечение слюнно-каменной болезни". Янаграждена
-										Почетной грамотой Законодательного собрания Приморского края за многолетний добросовестный труд,
-										высокий
-										профессионализм и большой вклад в совершенствование оказания медицинской помощи населению
-										Приморского
-										края.<br>
-										Мне нравится моя профессия и яработаю с удовольствием и всем желаю того же.
-									</p>
-								</div>
-								<div class="about-tabs__body">
-									<span>Профессиональный опыт:</span>
-									<ul>
-										<li>1998–2009 гг. — Краевая клиническая больница № 2, г.Владивосток.
-											Врач-челюстно-лицевой хирург.
-										</li>
-										<li>2004–2009 гг. — Краевая клиническая больница № 2, г. Владивосток.
-											Врач-оториноларинголог.
-										</li>
-										<li>2009–2016 гг. — Городская больница № 2, г.Владивосток.
-											Врач-челюстно-лицевой хирург отделения нейрохирургии.
-										</li>
-										<li> 2013–2018 гг. — Медицинский Центр ДВФУ, г.Владивосток.
-											Врач-челюстно-лицевой хирург, оториноларинголог,
-											пластический хирург.
-										</li>
-										<li>
-											2010-2019 гг. — Клиника «Инномед-плюс», г.Владивосток.
-											Пластический хирург, врач-челюстно-лицевой хирург, оториноларинголог.
-										</li>
-										<li> 2019-2020 гг. — МЦ "Здоровье"
-											Пластический хирург, врач-челюстно-лицевой хирург, оториноларинголог.
-										</li>
-										<li>
-											С 2020-2023гг. Медицинский центр "Аленка" (ул. Маковского, 7б)
-											Пластический хирург, врач-челюстно-лицевой хирург, оториноларинголог.
-										</li>
-										<li>С 2020-2023гг. Ассистент института стоматологии ТГМУ
 
-										</li>
-										<li> С 2021г. Клиника Селин, Тимура Фрунзе, 11, стр. 15
-											Пластический хирург
-										</li>
-										<li> С 2022г. Клиника Биос, Иваньковское шоссе, 7
-											Пластический хирург
-										</li>
-										<li> С 2023г. Клиника GMT, Новинский бульвар, 20 а, стр. 9
-											Пластический хирург
-										</li>
-									</ul>
-								</div>
-								<div class="about-tabs__body">
-									<ul>
-										<li> 1991–1997 гг. — Владивостокский государственный медицинский университет. Лечебный факультет.
-											Специальность — лечебное дело. Квалификация — врач-хирург.
-										</li>
-										<li> 1997–1999 гг. — клиническая ординатура на кафедре общей хирургии с курсом челюстно-лицевой
-											хирургии
-											ВГМУ. Сертификат по челюстно-лицевой хирургии.
-										</li>
-										<li> 2000–2003 гг. — аспирантура на кафедре общей хирургии ВГМУ.
-
-										</li>
-										<li> 2002 г. — усовершенствование по теме: «Имплантация в стоматологии и челюстно-лицевой хирургии:
-											хирургические и ортопедические аспекты».
-											ВГМУ, кафедра стоматологии.
-										</li>
-										<li> 2003 г. — защита диссертации на соискание степени кандидат медицинских наук по теме:
-											«Современные
-											методы
-											диагностики и лечения слюнно-каменной болезни». Присуждена ученая степень кандидат медицинских
-											наук.
-										</li>
-										<li> Апрель-май 2003 г. — повышение квалификации на кафедре нейрохирургии
-											Военно-Медицинской академии Спб по нейрохирургии.
-										</li>
-										<li>
-											2004 г. — профессиональная переподготовка в ВГМУ по специальности «Оториноларингология».
-											Сертификат
-											оториноларинголога.
-										</li>
-										<li>
-											Март-апрель 2005 г. — усовершенствование в клинике челюстно-лицевой, косметической и пластической
-											хирургии и имплантологии в Мальтузианской больнице Св. Йоганнеса г. Дуйсбурга, Германия. В
-											процессе
-											усовершенствования особое внимание уделено вопросам хирургического лечения дизоклюзий,
-											травматологии,
-											имплантологии
-											и пластической реконструктивной хирургии.
-										</li>
-										<li>
-											Октябрь 2008 г. — обучение по курсу
-											«Диспорт в практике врача эстетической медицины». УМЦ КИТ, Владивосток.
-										</li>
-										<li> Ноябрь 2008 г. — обучение по курсу
-											«Контурное моделирование лица препаратами группы Рестилайнов». УМЦ КИТ, Владивосток.
-										</li>
-										<li> Июнь 2008 г. — делегат V международного курса по пластической хирургии,
-											г. Екатеринбург.
-										</li>
-										<li> Июнь 2010 г. — делегат шестого международного курса по пластической хирургии, методикам
-											омоложения
-											лица
-											и тела, г. Екатеринбург.
-										</li>
-										<li>
-											Апрель 2011 г. — делегат международного конгресса по остеологии, г. Канны.
-										</li>
-										<li> Июнь 2011 г. — делегат обучающего курса ISAPS, г. Санкт-Петербург.
-										</li>
-										<li> Сентябрь 2011 г. — делегат международного конгресса по антивозрастной медицине, г. Париж.
-										</li>
-										<li> Апрель 2012 г. — усовершенствование в клинике челюстно-лицевой, косметической
-											и пластической хирургии и имплантологии в Мальтузианской больнице
-											Святого Йоганнеса г. Дуйсбурга, Германия.
-											В процессе усовершенствования особое внимание уделено вопросам пластической реконструкктивной
-											хирургии лица, хирургического лечения дизокклюзий, расщелин верхней губы и неба, имплантологии.
-										</li>
-										<li> 4–8 сентября 2012 г. — делегат международного конгресса эстетической
-											и пластической хирургии (ISAPS), Женева.
-										</li>
-										<li> 11–15 сентября 2012 г. — делегат международного конгресса европейской ассоциации
-											черепно-челюстно-лицевой хирургии, Дубровник.
-										</li>
-										<li> Ноябрь 2012 г. — Страсбургская исследовательская группа остеосинтеза.
-											Обучающий курс по теме Свободный лоскут:
-											«Реконструктивная и онкологическая хирургия головы и шеи» — лекции
-											и практическая работа, г. Гронинген, Нидерланды (S. O. R. G. Free Flap Course:
-											«Head and Neck Reconstructive and Oncologic Surgery» — Lectures and hands-on Human Cadaver
-											Course).
-										</li>
-										<li>16-17 мая 2014 – Implantology International Dental Expert Symposium, Дюссельдорф, Германия
-
-										</li>
-										<li>
-											19 октября 2013 — 11-й продвинутый курс по короткорубцовому лифтингу средней
-											и нижней третей лиц, г. Гент, Бельгия (The 11 th Advanced MACS lift Course)
-										</li>
-										<li> 23–25 октября 2013 — 20-й международный обучающий курс по современным техникам в ринопластике,
-											г.
-											Амастердам, Нидерланды
-											(The 20 th International Course in Modern Rhinoplasty Techniques)
-										</li>
-										<li> 27 сентября – 4 октября 2014 г. — средиземноморский форум по эстетической
-											и антивозрастной медицине
-										</li>
-										<li> 1 июля - 1 декабря 2014 — профессиональная переподготовка по специальности «Пластическая
-											хирургия»
-										</li>
-										<li>
-											17-19 марта 2015 – 23-й продвинутый курс по функциональной
-											и эстетической ринопластике, Штуттгарт, Германия
-										</li>
-										<li> 20 марта 2015 – 1-й симпозиум по реконструкции носа, Штуттгарт, Германия
-										</li>
-										<li>
-											6-8 апреля 2016 — 24-й продвинутый курс по функциональной
-											и эстетической ринопластике, Штуттгарт, Германия
-										</li>
-										<li>
-											1-3 декабря 2016 — 36-й симпозиум по пластической хирургии, Debating the choices in rhinoplasty,
-											Нью-Йорк, США
-										</li>
-										<li>
-											26-28 апреля 2017 – 25–й продвинутый курс по функциональной и эстетической ринопластике,
-											Штуттгарт,
-											Германия.
-										</li>
-										<li> 29 апреля 2017 – 2-й симпозиум по реконструкции носа, Штуттгарт, Германия.
-
-										</li>
-										<li> 17-19 ноября 2017 – 13-й Ежегодный Симпозиум по эстетической хирургии, Чикаго, Иллинойс, США
-										</li>
-										<li> 31 октября - 4 ноября 2018 – 24-й конгресс Международного Общества Эстетической Пластической
-											Хирургии,
-											Майами-Бич, Флорида, США
-										</li>
-									</ul>
-								</div>
 							</div>
+							<div class="about-tabs__images" data-tabs-images>
+								<picture>
+									<source media="(min-width: 1280px)" srcset="img/about/1-pc.jpg">
+									<source media="(min-width: 768px)" srcset="img/about/1-tab.jpg">
+									<img class="about-tabs__image" data-src="img/about/1.jpg" alt="">
+								</picture>
+								<picture>
+									<source media="(min-width: 1280px)" srcset="img/about/2-pc.jpg">
+									<source media="(min-width: 768px)" srcset="img/about/2-tab.jpg">
+									<img class="about-tabs__image" data-src="img/about/2.jpg" alt="">
+								</picture>
+								<picture>
+									<source media="(min-width: 1280px)" srcset="img/about/3-pc.jpg">
+									<source media="(min-width: 768px)" srcset="img/about/3-tab.jpg">
+									<img class="about-tabs__image" data-src="img/about/3.jpg" alt="">
+								</picture>
+								<picture>
+									<source media="(min-width: 1280px)" srcset="img/about/4-pc.jpg">
+									<source media="(min-width: 768px)" srcset="img/about/4-tab.jpg">
+									<img class="about-tabs__image" data-src="img/about/4.jpg" alt="">
+								</picture>
 
+							</div>
 						</div>
-						<div class="about-tabs__images" data-tabs-images>
-							<picture><source srcset="img/about/1.webp" type="image/webp"><img class="about-tabs__image" src="img/about/1.jpg" alt=""></picture>
-							<picture><source srcset="img/about/2.webp" type="image/webp"><img class="about-tabs__image" src="img/about/2.jpg" alt=""></picture>
-							<picture><source srcset="img/about/3.webp" type="image/webp"><img class="about-tabs__image" src="img/about/3.jpg" alt=""></picture>
-							<picture><source srcset="img/about/4.webp" type="image/webp"><img class="about-tabs__image" src="img/about/4.jpg" alt=""></picture>
+
+						<div class="about__decor">
+							<span class="decor decor_1"></span>
+							<span class="decor decor_2"></span>
 						</div>
 					</div>
 
 				</div>
 			</div>
 
-			<section class="page__kinds kinds">
+			<section class="page__kinds kinds" id="kinds">
 				<div class="kinds__container">
 					<h2 class="kinds__title title">ВИДЫ ОПЕРАЦИЙ</h2>
 					<div class="kinds__body">
 						<ul class="kinds__list _hidden">
 							<li class="kinds__item item-kinds item-kinds-ibg">
-								<picture><source srcset="img/kinds/1.webp" type="image/webp"><img src="img/kinds/1.jpg" alt=""></picture>
+								<picture><source data-srcset="img/kinds/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/kinds/1.jpg" alt=""></picture>
 								<div class="item-kinds__body">
 									<h3 class="item-kinds__title item-kinds__title_1">Риносептопластика</h3>
 								</div>
 							</li>
 							<li class="kinds__item item-kinds item-kinds-ibg">
-								<picture><source srcset="img/kinds/2.webp" type="image/webp"><img src="img/kinds/2.jpg" alt=""></picture>
+								<picture><source data-srcset="img/kinds/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/kinds/2.jpg" alt=""></picture>
 								<div class="item-kinds__body">
 									<h3 class="item-kinds__title item-kinds__title_2">Блефаропластика</h3>
 								</div>
 							</li>
 							<li class="kinds__item item-kinds item-kinds-ibg">
-								<picture><source srcset="img/kinds/3.webp" type="image/webp"><img src="img/kinds/3.jpg" alt=""></picture>
+								<picture><source data-srcset="img/kinds/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/kinds/3.jpg" alt=""></picture>
 								<div class="item-kinds__body">
 									<h3 class="item-kinds__title item-kinds__title_3">Лифтинг лица</h3>
 								</div>
 							</li>
 							<li class="kinds__item item-kinds item-kinds-ibg">
-								<picture><source srcset="img/kinds/4.webp" type="image/webp"><img src="img/kinds/4.jpg" alt=""></picture>
+								<picture><source data-srcset="img/kinds/4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/kinds/4.jpg" alt=""></picture>
 								<div class="item-kinds__body">
 									<h3 class="item-kinds__title item-kinds__title_4">Ментопластика</h3>
 								</div>
 							</li>
 							<li class="kinds__item item-kinds item-kinds-ibg">
-								<picture><source srcset="img/kinds/5.webp" type="image/webp"><img src="img/kinds/5.jpg" alt=""></picture>
+								<picture><source data-srcset="img/kinds/5.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/kinds/5.jpg" alt=""></picture>
 								<div class="item-kinds__body">
 									<h3 class="item-kinds__title item-kinds__title_5">Отопластика</h3>
 								</div>
 							</li>
 							<li class="kinds__item item-kinds item-kinds-ibg">
-								<picture><source srcset="img/kinds/6.webp" type="image/webp"><img src="img/kinds/6.jpg" alt=""></picture>
+								<picture><source data-srcset="img/kinds/6.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/kinds/6.jpg" alt=""></picture>
 								<div class="item-kinds__body">
 									<h3 class="item-kinds__title item-kinds__title_6">Ортогнатическая хирургия</h3>
 								</div>
 							</li>
 							<li class="kinds__item item-kinds item-kinds-ibg">
-								<picture><source srcset="img/kinds/7.webp" type="image/webp"><img src="img/kinds/7.jpg" alt=""></picture>
+								<picture><source data-srcset="img/kinds/7.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/kinds/7.jpg" alt=""></picture>
 								<div class="item-kinds__body">
 									<h3 class="item-kinds__title item-kinds__title_7">Врождённые расщелины губы и нёба</h3>
 								</div>
 							</li>
 							<li class="kinds__item item-kinds item-kinds-ibg">
-								<picture><source srcset="img/kinds/8.webp" type="image/webp"><img src="img/kinds/8.jpg" alt=""></picture>
+								<picture><source data-srcset="img/kinds/8.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/kinds/8.jpg" alt=""></picture>
 								<div class="item-kinds__body">
 									<h3 class="item-kinds__title item-kinds__title_8">Интимная пластика (Лабиопластика)</h3>
 								</div>
@@ -391,7 +422,7 @@
 				</div>
 			</section>
 
-			<section class="page__service service" data-bg>
+			<section class="page__service service">
 				<div class="service__container">
 					<h2 class="service__title title">В мои услуги я включаю:</h2>
 					<div class="service__slider">
@@ -456,264 +487,277 @@
 				</div>
 			</section>
 
-			<section class="page__gallery gallery">
+			<section class="page__gallery gallery" id="gallery">
 				<div class="gallery__container">
-					<h2 class="gallery__title title">Галерея</h2>
-					<div class="gallery__slider-wrapper">
-						<div class="gallery__slider">
-							<div class="gallery__swiper">
+					<div class="gallery__wrapper">
+						<h2 class="gallery__title title">Галерея</h2>
+						<div class="gallery__slider-wrapper">
+							<div class="gallery__slider">
+								<div class="gallery__swiper">
 
-								<div class="gallery__slide slide-gallery">
-									<div class="slide-gallery__body">
-										<div class="slide-gallery__img slide-gallery__img-ibg">
-											<picture><source srcset="img/gallery/1.webp" type="image/webp"><img src="img/gallery/1.jpg" alt=""></picture>
+									<div class="gallery__slide slide-gallery">
+										<div class="slide-gallery__body">
+											<div class="slide-gallery__img slide-gallery__img-ibg">
+												<picture><source data-srcset="img/gallery/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery/1.jpg" alt=""></picture>
+											</div>
+											<div class="slide-gallery__footer">
+												<span>До</span><span>После</span>
+											</div>
 										</div>
-										<div class="slide-gallery__footer">
-											<span>До</span><span>После</span>
-										</div>
+										<p class="slide-gallery__text">
+											Ментопластика.
+										</p>
 									</div>
-									<p class="slide-gallery__text">
-										Ментопластика.
-									</p>
-								</div>
 
 
-								<div class="gallery__slide slide-gallery">
-									<div class="slide-gallery__body">
-										<div class="slide-gallery__img slide-gallery__img-ibg">
-											<picture><source srcset="img/gallery/2.webp" type="image/webp"><img src="img/gallery/2.jpg" alt=""></picture>
+									<div class="gallery__slide slide-gallery">
+										<div class="slide-gallery__body">
+											<div class="slide-gallery__img slide-gallery__img-ibg">
+												<picture><source data-srcset="img/gallery/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery/2.jpg" alt=""></picture>
+											</div>
+											<div class="slide-gallery__footer">
+												<span>До</span><span>После</span>
+											</div>
 										</div>
-										<div class="slide-gallery__footer">
-											<span>До</span><span>После</span>
-										</div>
+										<p class="slide-gallery__text">
+											Ментопластика.
+										</p>
 									</div>
-									<p class="slide-gallery__text">
-										Ментопластика.
-									</p>
-								</div>
 
-								<div class="gallery__slide slide-gallery">
-									<div class="slide-gallery__body">
-										<div class="slide-gallery__img slide-gallery__img-ibg">
-											<picture><source srcset="img/gallery/3.webp" type="image/webp"><img src="img/gallery/3.jpg" alt=""></picture>
+									<div class="gallery__slide slide-gallery">
+										<div class="slide-gallery__body">
+											<div class="slide-gallery__img slide-gallery__img-ibg">
+												<picture><source data-srcset="img/gallery/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery/3.jpg" alt=""></picture>
+											</div>
+											<div class="slide-gallery__footer">
+												<span>До</span><span>После</span>
+											</div>
 										</div>
-										<div class="slide-gallery__footer">
-											<span>До</span><span>После</span>
-										</div>
+										<p class="slide-gallery__text">
+											Ментопластика
+										</p>
 									</div>
-									<p class="slide-gallery__text">
-										Ментопластика
-									</p>
-								</div>
 
-								<div class="gallery__slide slide-gallery">
-									<div class="slide-gallery__body">
-										<div class="slide-gallery__img slide-gallery__img-ibg">
-											<picture><source srcset="img/gallery/4.webp" type="image/webp"><img src="img/gallery/4.jpg" alt=""></picture>
+									<div class="gallery__slide slide-gallery">
+										<div class="slide-gallery__body">
+											<div class="slide-gallery__img slide-gallery__img-ibg">
+												<picture><source data-srcset="img/gallery/4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery/4.jpg" alt=""></picture>
+											</div>
+											<div class="slide-gallery__footer">
+												<span>До</span><span>После</span>
+											</div>
 										</div>
-										<div class="slide-gallery__footer">
-											<span>До</span><span>После</span>
-										</div>
+										<p class="slide-gallery__text">
+											Ментопластика
+										</p>
 									</div>
-									<p class="slide-gallery__text">
-										Ментопластика
-									</p>
-								</div>
 
-								<div class="gallery__slide slide-gallery">
-									<div class="slide-gallery__body">
-										<div class="slide-gallery__img slide-gallery__img-ibg">
-											<picture><source srcset="img/gallery/5.webp" type="image/webp"><img src="img/gallery/5.jpg" alt=""></picture>
+									<div class="gallery__slide slide-gallery">
+										<div class="slide-gallery__body">
+											<div class="slide-gallery__img slide-gallery__img-ibg">
+												<picture><source data-srcset="img/gallery/5.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery/5.jpg" alt=""></picture>
+											</div>
+											<div class="slide-gallery__footer">
+												<span>До</span><span>После</span>
+											</div>
 										</div>
-										<div class="slide-gallery__footer">
-											<span>До</span><span>После</span>
-										</div>
+										<p class="slide-gallery__text">
+											Ментопластика
+										</p>
 									</div>
-									<p class="slide-gallery__text">
-										Ментопластика
-									</p>
-								</div>
 
-								<div class="gallery__slide slide-gallery">
-									<div class="slide-gallery__body">
-										<div class="slide-gallery__img slide-gallery__img-ibg">
-											<picture><source srcset="img/gallery/6.webp" type="image/webp"><img src="img/gallery/6.jpg" alt=""></picture>
+									<div class="gallery__slide slide-gallery">
+										<div class="slide-gallery__body">
+											<div class="slide-gallery__img slide-gallery__img-ibg">
+												<picture><source data-srcset="img/gallery/6.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery/6.jpg" alt=""></picture>
+											</div>
+											<div class="slide-gallery__footer">
+												<span>До</span><span>После</span>
+											</div>
 										</div>
-										<div class="slide-gallery__footer">
-											<span>До</span><span>После</span>
-										</div>
+										<p class="slide-gallery__text">
+											Отопластика
+										</p>
 									</div>
-									<p class="slide-gallery__text">
-										Отопластика
-									</p>
-								</div>
 
-								<div class="gallery__slide slide-gallery">
-									<div class="slide-gallery__body">
-										<div class="slide-gallery__img slide-gallery__img-ibg">
-											<picture><source srcset="img/gallery/7.webp" type="image/webp"><img src="img/gallery/7.jpg" alt=""></picture>
+									<div class="gallery__slide slide-gallery">
+										<div class="slide-gallery__body">
+											<div class="slide-gallery__img slide-gallery__img-ibg">
+												<picture><source data-srcset="img/gallery/7.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery/7.jpg" alt=""></picture>
+											</div>
+											<div class="slide-gallery__footer">
+												<span>До</span><span>После</span>
+											</div>
 										</div>
-										<div class="slide-gallery__footer">
-											<span>До</span><span>После</span>
-										</div>
+										<p class="slide-gallery__text">
+											Отопластика
+										</p>
 									</div>
-									<p class="slide-gallery__text">
-										Отопластика
-									</p>
-								</div>
 
-								<div class="gallery__slide slide-gallery">
-									<div class="slide-gallery__body">
-										<div class="slide-gallery__img slide-gallery__img-ibg">
-											<picture><source srcset="img/gallery/8.webp" type="image/webp"><img src="img/gallery/8.jpg" alt=""></picture>
+									<div class="gallery__slide slide-gallery">
+										<div class="slide-gallery__body">
+											<div class="slide-gallery__img slide-gallery__img-ibg">
+												<picture><source data-srcset="img/gallery/8.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery/8.jpg" alt=""></picture>
+											</div>
+											<div class="slide-gallery__footer">
+												<span>До</span><span>После</span>
+											</div>
 										</div>
-										<div class="slide-gallery__footer">
-											<span>До</span><span>После</span>
-										</div>
+										<p class="slide-gallery__text">
+											Преображение после травмы носа.
+										</p>
 									</div>
-									<p class="slide-gallery__text">
-										Преображение после травмы носа.
-									</p>
-								</div>
 
-								<div class="gallery__slide slide-gallery">
-									<div class="slide-gallery__body">
-										<div class="slide-gallery__img slide-gallery__img-ibg">
-											<picture><source srcset="img/gallery/9.webp" type="image/webp"><img src="img/gallery/9.jpg" alt=""></picture>
+									<div class="gallery__slide slide-gallery">
+										<div class="slide-gallery__body">
+											<div class="slide-gallery__img slide-gallery__img-ibg">
+												<picture><source data-srcset="img/gallery/9.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery/9.jpg" alt=""></picture>
+											</div>
+											<div class="slide-gallery__footer">
+												<span>До</span><span>После</span>
+											</div>
 										</div>
-										<div class="slide-gallery__footer">
-											<span>До</span><span>После</span>
-										</div>
+										<p class="slide-gallery__text">
+											Круговая блефаропластика. Чиклифтинг.
+										</p>
 									</div>
-									<p class="slide-gallery__text">
-										Круговая блефаропластика. Чиклифтинг.
-									</p>
-								</div>
 
-								<div class="gallery__slide slide-gallery">
-									<div class="slide-gallery__body">
-										<div class="slide-gallery__img slide-gallery__img-ibg">
-											<picture><source srcset="img/gallery/10.webp" type="image/webp"><img src="img/gallery/10.jpg" alt=""></picture>
+									<div class="gallery__slide slide-gallery">
+										<div class="slide-gallery__body">
+											<div class="slide-gallery__img slide-gallery__img-ibg">
+												<picture><source data-srcset="img/gallery/10.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery/10.jpg" alt=""></picture>
+											</div>
+											<div class="slide-gallery__footer">
+												<span>До</span><span>После</span>
+											</div>
 										</div>
-										<div class="slide-gallery__footer">
-											<span>До</span><span>После</span>
-										</div>
+										<p class="slide-gallery__text">
+											Риносептопластика.
+										</p>
 									</div>
-									<p class="slide-gallery__text">
-										Риносептопластика.
-									</p>
+
+
 								</div>
-
-
+								<div class="gallery__nav">
+									<button class="gallery__nav-item gallery__nav-item_next" aria-label="Следующий слайд"></button>
+									<button class="gallery__nav-item gallery__nav-item_prev" aria-label="Предыдущий слайд"></button>
+								</div>
 							</div>
-							<div class="gallery__nav">
-								<button class="gallery__nav-item gallery__nav-item_next" aria-label="Следующий слайд"></button>
-								<button class="gallery__nav-item gallery__nav-item_prev" aria-label="Предыдущий слайд"></button>
-							</div>
+						</div>
+						<div class="gallery__decor">
+							<span class="decor decor_1"></span>
+							<span class="decor decor_2"></span>
 						</div>
 					</div>
 
 				</div>
 			</section>
 
-			<section class="page__reviews reviews">
+			<section class="page__reviews reviews" id="reviews">
 				<div class="reviews__container">
-					<h2 class="reviews__title title">ОТЗЫВЫ</h2>
-					<div class="reviews__slider">
+					<div class="reviews__wrapper">
+						<h2 class="reviews__title title">ОТЗЫВЫ</h2>
+						<div class="reviews__slider">
 
-						<div class="reviews__swiper">
+							<div class="reviews__swiper">
 
-							<div class="reviews__slide slide-reviews">
-								<div class="slide-reviews__header">
-									<div class="slide-reviews__header-main">
-										<span class="slide-reviews__stars"></span>
-										<div class="slide-reviews__name">Safary</div>
-										<div class="slide-reviews__date">Ноябрь 2020 г.</div>
+								<div class="reviews__slide slide-reviews">
+									<div class="slide-reviews__header">
+										<div class="slide-reviews__header-main">
+											<span class="slide-reviews__stars"></span>
+											<div class="slide-reviews__name">Safary</div>
+											<div class="slide-reviews__date">Ноябрь 2020 г.</div>
+										</div>
+										<div class="slide-reviews__img">
+											<picture><source data-srcset="img/reviews/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/reviews/1.jpg" alt=""></picture>
+										</div>
 									</div>
-									<div class="slide-reviews__img">
-										<picture><source srcset="img/reviews/1.webp" type="image/webp"><img src="img/reviews/1.jpg" alt=""></picture>
-									</div>
+									<p class="slide-reviews__text">
+										Спасибо Вам огромное сделали из меня красавицу!!! Теперь не узнают!
+									</p>
 								</div>
-								<p class="slide-reviews__text">
-									Спасибо Вам огромное сделали из меня красавицу!!! Теперь не узнают!
-								</p>
-							</div>
 
-							<div class="reviews__slide slide-reviews">
-								<div class="slide-reviews__header">
-									<div class="slide-reviews__header-main">
-										<span class="slide-reviews__stars"></span>
-										<div class="slide-reviews__name">Safary</div>
-										<div class="slide-reviews__date">Ноябрь 2020 г.</div>
+								<div class="reviews__slide slide-reviews">
+									<div class="slide-reviews__header">
+										<div class="slide-reviews__header-main">
+											<span class="slide-reviews__stars"></span>
+											<div class="slide-reviews__name">Safary</div>
+											<div class="slide-reviews__date">Ноябрь 2020 г.</div>
+										</div>
+										<div class="slide-reviews__img">
+											<picture><source data-srcset="img/reviews/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/reviews/2.jpg" alt=""></picture>
+										</div>
 									</div>
-									<div class="slide-reviews__img">
-										<picture><source srcset="img/reviews/2.webp" type="image/webp"><img src="img/reviews/2.jpg" alt=""></picture>
-									</div>
+									<p class="slide-reviews__text">
+										Юлия Игоревна, спасибо Вам огромное за всё, что Вы сделали! Я Вас люблю!!!
+									</p>
 								</div>
-								<p class="slide-reviews__text">
-									Юлия Игоревна, спасибо Вам огромное за всё, что Вы сделали! Я Вас люблю!!!
-								</p>
-							</div>
 
-							<div class="reviews__slide slide-reviews">
-								<div class="slide-reviews__header">
-									<div class="slide-reviews__header-main">
-										<span class="slide-reviews__stars"></span>
-										<div class="slide-reviews__name">Safary</div>
-										<div class="slide-reviews__date">Ноябрь 2020 г.</div>
+								<div class="reviews__slide slide-reviews">
+									<div class="slide-reviews__header">
+										<div class="slide-reviews__header-main">
+											<span class="slide-reviews__stars"></span>
+											<div class="slide-reviews__name">Safary</div>
+											<div class="slide-reviews__date">Ноябрь 2020 г.</div>
+										</div>
+										<div class="slide-reviews__img">
+											<picture><source data-srcset="img/reviews/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/reviews/3.jpg" alt=""></picture>
+										</div>
 									</div>
-									<div class="slide-reviews__img">
-										<picture><source srcset="img/reviews/3.webp" type="image/webp"><img src="img/reviews/3.jpg" alt=""></picture>
-									</div>
+									<p class="slide-reviews__text">
+										Юлия Игоревна, здравствуйте! Спасибо, всё очень красиво, все комплименты делают! Очень долго хотела и
+										свершилось! Мне очень нравится! 4 месяца после операции.
+									</p>
 								</div>
-								<p class="slide-reviews__text">
-									Юлия Игоревна, здравствуйте! Спасибо, всё очень красиво, все комплименты делают! Очень долго хотела и
-									свершилось! Мне очень нравится! 4 месяца после операции.
-								</p>
-							</div>
 
-							<div class="reviews__slide slide-reviews">
-								<div class="slide-reviews__header">
-									<div class="slide-reviews__header-main">
-										<span class="slide-reviews__stars"></span>
-										<div class="slide-reviews__name">Safary</div>
-										<div class="slide-reviews__date">Ноябрь 2020 г.</div>
+								<div class="reviews__slide slide-reviews">
+									<div class="slide-reviews__header">
+										<div class="slide-reviews__header-main">
+											<span class="slide-reviews__stars"></span>
+											<div class="slide-reviews__name">Safary</div>
+											<div class="slide-reviews__date">Ноябрь 2020 г.</div>
+										</div>
+										<div class="slide-reviews__img">
+											<picture><source data-srcset="img/reviews/4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/reviews/4.jpg" alt=""></picture>
+										</div>
 									</div>
-									<div class="slide-reviews__img">
-										<picture><source srcset="img/reviews/4.webp" type="image/webp"><img src="img/reviews/4.jpg" alt=""></picture>
-									</div>
+									<p class="slide-reviews__text">
+										Здравствуйте, Юлия Игоревна! Хочу Вам сказать огрмоное спасибо за такую красоту! Вы умничка! Сделали
+										мне такой красивый носик, ещё и дышу без проблем и живу без капель! Я очень счастлива!!!
+									</p>
 								</div>
-								<p class="slide-reviews__text">
-									Здравствуйте, Юлия Игоревна! Хочу Вам сказать огрмоное спасибо за такую красоту! Вы умничка! Сделали
-									мне такой красивый носик, ещё и дышу без проблем и живу без капель! Я очень счастлива!!!
-								</p>
-							</div>
 
-							<div class="reviews__slide slide-reviews">
-								<div class="slide-reviews__header">
-									<div class="slide-reviews__header-main">
-										<span class="slide-reviews__stars"></span>
-										<div class="slide-reviews__name">Safary</div>
-										<div class="slide-reviews__date">Ноябрь 2020 г.</div>
+								<div class="reviews__slide slide-reviews">
+									<div class="slide-reviews__header">
+										<div class="slide-reviews__header-main">
+											<span class="slide-reviews__stars"></span>
+											<div class="slide-reviews__name">Safary</div>
+											<div class="slide-reviews__date">Ноябрь 2020 г.</div>
+										</div>
+										<div class="slide-reviews__img">
+											<picture><source data-srcset="img/reviews/5.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/reviews/5.jpg" alt=""></picture>
+										</div>
 									</div>
-									<div class="slide-reviews__img">
-										<picture><source srcset="img/reviews/5.webp" type="image/webp"><img src="img/reviews/5.jpg" alt=""></picture>
-									</div>
+									<p class="slide-reviews__text">
+										Юлия Игоревна, добрый день! Не могу налюбоваться1 Невероятно красивый носик! Не перестану Вас
+										благодарить. Спасибо Вам большое!!!
+									</p>
 								</div>
-								<p class="slide-reviews__text">
-									Юлия Игоревна, добрый день! Не могу налюбоваться1 Невероятно красивый носик! Не перестану Вас
-									благодарить. Спасибо Вам большое!!!
-								</p>
-							</div>
 
+							</div>
+							<div class="reviews__pagination"></div>
 						</div>
-						<div class="reviews__pagination"></div>
+						<div class="reviews__decor">
+							<span class="decor decor_1"></span>
+							<span class="decor decor_2"></span>
+						</div>
 					</div>
+
 				</div>
 			</section>
 
 		</main>
-		<footer class="footer">
+		<footer class="footer" id="footer">
 			<div class="footer__container">
 
 				<div class="footer__logo">
@@ -750,14 +794,6 @@
 		</footer>
 
 	</div>
-	<!-- <div class="preload">
-		<div class="preload__inner">
-			<span class="preload__image"></span>
-			<span class="preload__title preload__title_1">Okonskaya</span>
-			<span class="preload__title preload__title_2">Yuliya</span>
-			<span class="preload__title preload__title_3">Igorevna</span>
-		</div>
-	</div> -->
 	<div id="order-call-thanks" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
@@ -767,7 +803,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240217114722"></script>
+	<script src="js/app.min.js?_v=20240218190753"></script>
 </body>
 
 </html>
