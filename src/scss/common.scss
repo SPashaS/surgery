@@ -1,37 +1,74 @@
 // Заголовки, общие БЄМ блоки и проче...
 
-.icon {
-  display: inline-block;
-  width: 54px;
-  height: 54px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  // .icon_1
-  &_1 {
-    background-image: url("@img/what-will-be/1.svg");
-  }
-  // .icon_2
-  &_2 {
-    background-image: url("@img/what-will-be/2.svg");
-  }
-  // .icon_3
-  &_3 {
-    background-image: url("@img/what-will-be/3.svg");
-  }
-  // .icon_4
-  &_4 {
-    background-image: url("@img/what-will-be/4.svg");
-  }
-  // .icon_5
-  &_5 {
-    background-image: url("@img/what-will-be/5.svg");
-  }
+// .icon {
+//   display: inline-block;
+//   width: 54px;
+//   height: 54px;
+//   background-size: contain;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   // .icon_1
+//   &_1 {
+//     background-image: url("@img/what-will-be/1.svg");
+//   }
+//   // .icon_2
+//   &_2 {
+//     background-image: url("@img/what-will-be/2.svg");
+//   }
+//   // .icon_3
+//   &_3 {
+//     background-image: url("@img/what-will-be/3.svg");
+//   }
+//   // .icon_4
+//   &_4 {
+//     background-image: url("@img/what-will-be/4.svg");
+//   }
+//   // .icon_5
+//   &_5 {
+//     background-image: url("@img/what-will-be/5.svg");
+//   }
+// }
+
+[class*="__wrapper"] {
+position: relative;
 }
+
+[class*="__decor"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.decor {
+  position: absolute;
+  &::after {
+    content:'';
+    display: block;
+    background-image: url("@img/decor.png");
+    background-size: cover;
+    aspect-ratio: 16/15;
+  }
+
+  // &_s {
+  //   &::after {
+  //     width: 42px;
+
+  //     @media (min-width:$pc){
+  //       width: 55px; 
+  //     }
+  //   }
+
+  // }
+}
+
 
 .title {
   font-weight: 600;
   font-size: 3rem;
+  line-height: 1;
   text-transform: uppercase;
   text-align: center;
 }

@@ -96,11 +96,21 @@ body {
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 100%;
+		aspect-ratio: 1/2;
+		// linear-gradient(179deg, rgba(191, 178, 168, 0.3) 0%, #bfb2a8 100%)
 		background-image: url("@img/bg.jpg");
-		background-size: contain;
+		background-size: 200%;
 		background-repeat: no-repeat;
+		
 
+		@media (min-width:$mobile){
+			background-size: contain;
+		}
+		
+		@media (min-width:$pc){
+			aspect-ratio: 2/1;
+			background-image: url("@img/bg-pc.jpg");
+		}
 	}
 
 	// Прижимаем footer

@@ -1,7 +1,16 @@
 .header {
-  padding-top: 30px;
+  padding-top: 20px;
   position: relative;
   z-index: 3;
+
+  @media (min-width:$mobile){
+    padding-top: 30px; 
+  }
+
+  @media (min-width:$pc){
+    padding-top: 40px; 
+  }
+
   // .header__container
   &__container {}
 
@@ -30,6 +39,7 @@
 
     @media (min-width:$tablet) {
       display: flex;
+      gap: 10px;
       align-items: center;
     }
   }
@@ -53,7 +63,7 @@
   // .logo__text
   &__text {
     font-size: 1.2rem;
-    line-height: 1;
+    line-height: 1.25;
 
     @media (min-width:$mobile){
       font-size: 1.6rem; 

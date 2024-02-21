@@ -7,16 +7,23 @@
   position: relative;
 
 
-  background-image: url("@img/bg2.jpg");
+  background-image: url("@img/bg3.jpg");
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
+  @media (min-width:$mobile){
+    padding-top: 80px;
+    padding-bottom: 30px;
+    background-image: url("@img/bg3-tab.jpg");
+  }
 
 
   @media (min-width:$pc){
     padding-top: 115px;
     padding-bottom: 60px;
+    background-image: url("@img/bg3-pc.jpg");
   }
 
   // .footer__container
@@ -24,12 +31,11 @@
     position: relative;
     z-index: 1;
 
-
     display: grid;
-    gap: 30px;
+    gap: 35px;
 
     @media (min-width:$mobile){
-      grid-template-columns: 0.8fr 1fr;
+      grid-template-columns: 0.7fr 1fr;
       row-gap: 45px;
     }
   }
@@ -46,16 +52,23 @@
   }
 
   // .footer__contacts
-
   &__contacts {}
 
   // .footer__title
 
   &__title {
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 3rem;
+    line-height: 1;
     text-transform: uppercase;
     font-family: SpectralSC;
+
+    @media (min-width:$mobile){
+      margin-bottom: 30px; 
+    }
+    @media (min-width:$pc){
+      margin-bottom: 45px; 
+    }
   }
 
   // .footer__contacts-list
@@ -63,14 +76,30 @@
   &__contacts-list {
     & > *:not(:last-child) {
       margin-bottom: 20px;
+
+      @media (min-width:$pc){
+        margin-bottom: 33px; 
+      }
     }
   }
 
   // .footer__contacts-row
 
   &__contacts-row {
+    @media (min-width:$pc){
+      display: flex;
+      gap: 30px;
+      .footer__contacts-item:nth-child(1) {
+        white-space: nowrap;
+      }
+    }
+
     & > *:not(:last-child) {
-      margin-bottom: 10px;
+      margin-bottom: 15px;
+
+      @media (min-width:$pc){
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -87,6 +116,11 @@
   &__contacts-mail {
     display: flex;
     justify-content: space-between;
+    max-width: 438px;
+
+    @media (min-width:$mobile){
+      padding-right: 50px;
+    }
   }
 
   // .footer__row
